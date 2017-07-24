@@ -12,6 +12,11 @@
 
     </properties>
 
+    <scm>
+        <developerConnection>scm:git:https://github.com/MauF/dummyPrj2.git</developerConnection>
+        <connection>scm:git:https://github.com/MauF/dummyPrj2.git</connection>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>com.mau.test.dummy</groupId>
@@ -19,6 +24,46 @@
             <version>0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>external.atlassian.jgitflow</groupId>
+                <artifactId>jgitflow-maven-plugin</artifactId>
+                <version>1.0-m5.1</version>
+                <!--<configuration>-->
+                <!--<flowInitContext>-->
+                <!--<masterBranchName>master</masterBranchName>-->
+                <!--<developBranchName>development</developBranchName>-->
+                <!--<featureBranchPrefix>feature-</featureBranchPrefix>-->
+                <!--<releaseBranchPrefix>release-</releaseBranchPrefix>-->
+                <!--<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>-->
+                <!--<versionTagPrefix>version-</versionTagPrefix>-->
+                <!--</flowInitContext>-->
+                <!--<noDeploy>true</noDeploy>-->
+                <!--<squash>true</squash>-->
+                <!--<scmCommentPrefix>[RELEASE]</scmCommentPrefix>-->
+                <!--</configuration>-->
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.1</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>primeur</id>
+            <url>http://nexus.primeur.com/content/repositories/spent_release</url>
+        </repository>
+        <snapshotRepository>
+            <id>primeur</id>
+            <url>http://nexus.primeur.com/content/repositories/spent_snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 
 </project>
