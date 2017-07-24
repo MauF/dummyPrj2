@@ -1,43 +1,6 @@
 <?xml version="1.0"?>
 <settings>
     <servers>
-        <!--
-            <server>
-              <id>spfab</id>
-              <username>admin</username>
-              <password>admin123</password>
-            </server>
-            <server>
-              <id>spfab-snapshots</id>
-              <username>admin</username>
-              <password>admin123</password>
-            </server>
-        -->
-        <server>
-            <id>ghip-snapshots</id>
-            <username>admin</username>
-            <password>admin123</password>
-        </server>
-        <server>
-            <id>ghip</id>
-            <username>admin</username>
-            <password>admin123</password>
-        </server>
-        <server>
-            <id>filebox_snapshot</id>
-            <username>admin</username>
-            <password>admin123</password>
-        </server>
-        <server>
-            <id>filebox</id>
-            <username>admin</username>
-            <password>admin123</password>
-        </server>
-        <server>
-            <id>primeur</id>
-            <username>admin</username>
-            <password>admin123</password>
-        </server>
         <server>
             <id>spent_snapshot</id>
             <username>admin</username>
@@ -45,26 +8,6 @@
         </server>
         <server>
             <id>spent_release</id>
-            <username>admin</username>
-            <password>admin123</password>
-        </server>
-        <server>
-            <id>ghibli-centralnode-commons-releases</id>
-            <username>admin</username>
-            <password>admin123</password>
-        </server>
-        <server>
-            <id>ghibli-centralnode-commons-snapshots</id>
-            <username>admin</username>
-            <password>admin123</password>
-        </server>
-        <server>
-            <id>ghibli-workflow-releases</id>
-            <username>admin</username>
-            <password>admin123</password>
-        </server>
-        <server>
-            <id>ghibli-workflow-snapshots</id>
             <username>admin</username>
             <password>admin123</password>
         </server>
